@@ -25,6 +25,8 @@ Header
 */
 header{
     background: black;
+    position: fixed;
+    width: 100%;
     
 }
 header .container{
@@ -67,7 +69,7 @@ header .logo a {
 }
  /*MAIN*/
  main{
-     padding: 35px 32px;
+     padding: 120px 32px 10px 32px;
 
  }
  main section{
@@ -99,6 +101,7 @@ header .logo a {
      font-size: 18px;
      line-height: 26px;
      margin-bottom: 36px;
+     color: black;
  }
 
  .sobre ul{
@@ -110,12 +113,18 @@ header .logo a {
  .sobre ul li{
      margin-right: 10px;
  }
+.sobre h2{
+    color: #A4A2A1;
+    font-size: 24px;
+    margin-bottom: 18px;
+}
 
 /**Portafolio**/
 
  .portafolio h2{
     margin-bottom: 34px;
     font-size: 30px;
+    color: #A4A2A1;
 }
 .portafolio .articles {
     display: flex;
@@ -200,6 +209,7 @@ article{
 .skills h2{
     font-size: 23px;
     margin-bottom: 20px;
+    color: #A4A2A1;
 
 }
 .skills h3{
@@ -209,12 +219,20 @@ article{
     display: flex;
     flex-wrap: wrap;
 }
+.skills .skill:nth-child(odd) {
+    padding-right: 20px;
+
+}
 .skills .skill{
     width: 50%;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    color: black;
+
 }
+
+
 
 .skills .barra{
     background: #4c2358;
@@ -240,10 +258,14 @@ article{
 /*todo formulario*/
 .formulario{
     display: flex;
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
 }
 .formulario h2{
     margin-bottom: 30px;
     font-size: 27px;
+    color: #A4A2A1
 }
 .formulario .cont-formulario{
     width: 70%;
@@ -293,6 +315,34 @@ article{
 .textarea textarea{
      width: 100%;
  }
+ .formulario button {
+    background-color: #42704e;
+    color: white;
+    width: 160px;
+    height: 44px;}
+
+ /*footer*/
+  footer{
+      background: black;
+
+  }
+
+  footer .container{
+      display: flex;
+      justify-content: space-between;
+      padding: 36px 0;
+  }
+  footer .container{
+      max-width: 960px;
+      width: 100%;
+      margin: auto;
+      font-size: 13px;
+      color: #fff;
+  }
+footer .container a{
+      color: #fff;
+  }
+ 
    
 
 
